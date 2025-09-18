@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>extended registration</title>
+</head>
+<body>
+    <h2>student registration</h2>
+    <form action="/register" method="post">
+
+        <label for="name">full name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label>gender</label>
+        <br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">male</label>
+        <br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">female</label>
+        <label for="other">other</label>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">other</label>
+        <br><br>
+        <label for="bio">bio:</label>
+        <textarea id="bio" name="bio" rows="4" cols="50"></textarea>
+        <br><br>
+        <button type="submit">register</button>
+    </form>
+</body>
+</html>
